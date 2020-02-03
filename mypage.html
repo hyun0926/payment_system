@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<title>Payment system</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="apple-mobile-web-app-title" content="CMEsoft">
+		<meta name="description" content="Payment system">
+		<meta name="keywords" content="웹에이전시, 비트코인, 가상화폐">
+		<meta property="og:site_name" content="Payment system">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Payment system">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/icheck.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<a href="#0" class="cd-back"><i class="xi-angle-left"></i></a>
+			<a class="cd-logo" href="index.html"><img src="images/global/common/logo.png" alt="CMEsoft"></a>
+			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+		</header>
+	
+<main class="cd-main-content mypage">
+	<div class="container">
+		<h3>회원정보</h3>
+		<ul class="insert-wrap">
+			<li>
+				<h6><span>*</span> 이름</h6>
+				<input type="text" placeholder="8~12자리영문,숫자,특수문자 사용" value="홍길동" />
+			</li>
+			<li>
+				<h6>이메일</h6>
+				<input type="email" class="readonly" placeholder="이메일 입력" value="test@naver.com" readonly />
+			</li>
+			<li>
+				<h6>비밀번호</h6>
+				<a href="" class="btn-edge"><i class="fas fa-retweet"></i> 비밀번호변경</a>
+			</li>
+		</ul>
+		<a href="#completion" rel="modal:open" class="btn-wide">저장</a>
+	</div>
+</main>
+<div id="checkId" class="modal alert-blocker">
+	<div class="inner">
+		<div class="moHead">
+			<h3>payment system</h3>
+		</div>
+		<div class="moMid alignCen">
+			<p>이미 사용중인 아이디입니다.</p>
+		</div>
+		<div class="moFoot">
+			<ul class="btnBox">
+				<li><a href="#n" class="btn-c">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="terms" class="modal main-blocker">
+	<div class="inner">
+		<div class="moHead">
+			<h3>약관동의</h3>
+		</div>
+		<div class="moMid">
+			<ul class="tabList terms_tab">
+				<li><a href="#tab-1" class="current">이용약관</a></li>
+				<li><a href="#tab-2" class="">개인정보취급방침</a></li>
+			</ul>
+			<div id="tab-1" class="tabCon current">
+				이용약관
+			</div>
+			<div id="tab-2" class="tabCon">
+				개인정보취급방침
+			</div>
+		</div>
+	</div>
+</div>
+<div id="completion" class="modal alert-blocker">
+	<div class="inner">
+		<div class="moHead">
+			<h3>payment system</h3>
+		</div>
+		<div class="moMid">
+			<p>회원가입이 완료되었습니다.<br>입력하신 메일로 이메일인증메일이 발송되었습니다.<br>이메일을 확인해주세요.<br>(이메일인증완료 후, 로그인이 가능합니다.)</p>
+		</div>
+		<div class="moFoot">
+			<ul class="btnBox">
+				<li><a href="#n" class="btn-c">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+		<div id="cd-lateral-nav">
+			<div class="nav-top">
+				<a href="mypage.html"><em class="userName"><strong>홍길동</strong>님</em></a>
+				<span class="alarm">
+					<i class="xi-bell-o"></i>
+					<span class="alarmNum">2</span>
+				</span>
+				<div class="boxing">
+					<select class="lang">
+						<option value="korean">Korean</option>
+						<option value="korean">English</option>
+					</select>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+			</div>
+			<nav class="gnb">
+				<ul class="cd-navigation">
+					<li class="item-has-children">
+						<a href="#0">가맹점 소개</a>
+						<ul class="sub-menu">
+							<li><a href="franchise.html">가맹점 소개</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">마이페이지</a>
+						<ul class="sub-menu">
+							<li><a href="#0">코인결제</a></li>
+							<li><a href="payment_details.html">결제내역</a></li>
+							<li><a href="receipt.html">전자영수증</a></li>
+							<li><a href="mypage.html">회원정보</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">고객센터</a>
+						<ul class="sub-menu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="inquiry.html">1:1 문의</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">설정</a>
+						<ul class="sub-menu">
+							<li><a href="regist_wallet.html">지갑주소등록</a></li>
+							<li><a href="notification.html">알림</a></li>
+							<li><a href="setting.html">환경설정</a></li>
+						</ul>
+					</li>
+				</ul> <!-- cd-navigation -->
+			</nav>
+		</div>
+		<script>
+			$('a[href="#privacy"]').click(function(event) {
+				event.preventDefault();
+				$(this).modal({
+					closeExisting: false
+				});
+			});			
+		</script>
+		<a href="#0" class="cd-top js-cd-top">Top</a>
+	</body>
+</html>
+	

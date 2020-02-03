@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<title>Payment system</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="apple-mobile-web-app-title" content="CMEsoft">
+		<meta name="description" content="Payment system">
+		<meta name="keywords" content="웹에이전시, 비트코인, 가상화폐">
+		<meta property="og:site_name" content="Payment system">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Payment system">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/icheck.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<a href="#0" class="cd-back"><i class="xi-angle-left"></i></a>
+			<a class="cd-logo" href="index.html"><img src="images/global/common/logo.png" alt="CMEsoft"></a>
+			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+		</header>
+	
+<main class="cd-main-content setting">
+	<div class="container">
+		<h3>환경설정</h3>
+		<div class="setting-cell">
+			<ul>
+				<li class="setting_lock">
+					<div class="boxing">
+						<span><i class="fas fa-lock"></i></span>
+						<h4>앱 잠금 활성화</h4>
+						<div class="tggl-wrap">
+							<input class='tggl-input' id='switch01' type='checkbox' checked>
+							<label class='tggl-btn switch-sub ying' for='switch01'></label>
+						</div>
+					</div>
+					<p>앱을 켤 때마다 핀번호 또는 지문을 확인합니다.</p>
+				</li>
+				<li class="setting_pin">
+					<div class="boxing">
+						<span><i class="fas fa-ellipsis-h"></i></span>
+						<h4>PIN 번호</h4>
+						<a href="#n" class="btn-link">PIN번호 등록</a>
+					</div>
+				</li>
+				<li class="setting_fgp">
+					<div class="boxing">
+						<span><i class="fas fa-fingerprint"></i></span>
+						<h4>지문</h4>
+						<a href="#check-fgp" rel="modal:open" class="btn-link">지문 등록</a>
+					</div>
+					<p>지문등록은 지문인식이 되는 기기에서만 사용 가능합니다. 휴대폰 설정에서 지문인식 사용을 확인후 이용해 주시기 바랍니다.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</main>
+<div id="check-fgp" class="modal alert-blocker">
+	<div class="inner">
+		<div class="moHead">
+			<h3>payment system</h3>
+		</div>
+		<div class="moMid">
+			<p>지문인식을 사용할수 없습니다.<br>휴대폰기기에서 지문을 등록한 후 이용해주시기 바랍니다.</p>
+		</div>
+		<div class="moFoot">
+			<ul class="btnBox">
+				<li><a href="#close-modal" rel="modal:close" class="btn-c">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+		<div id="cd-lateral-nav">
+			<div class="nav-top">
+				<a href="mypage.html"><em class="userName"><strong>홍길동</strong>님</em></a>
+				<span class="alarm">
+					<i class="xi-bell-o"></i>
+					<span class="alarmNum">2</span>
+				</span>
+				<div class="boxing">
+					<select class="lang">
+						<option value="korean">Korean</option>
+						<option value="korean">English</option>
+					</select>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+			</div>
+			<nav class="gnb">
+				<ul class="cd-navigation">
+					<li class="item-has-children">
+						<a href="#0">가맹점 소개</a>
+						<ul class="sub-menu">
+							<li><a href="franchise.html">가맹점 소개</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">마이페이지</a>
+						<ul class="sub-menu">
+							<li><a href="#0">코인결제</a></li>
+							<li><a href="payment_details.html">결제내역</a></li>
+							<li><a href="receipt.html">전자영수증</a></li>
+							<li><a href="mypage.html">회원정보</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">고객센터</a>
+						<ul class="sub-menu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="inquiry.html">1:1 문의</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">설정</a>
+						<ul class="sub-menu">
+							<li><a href="regist_wallet.html">지갑주소등록</a></li>
+							<li><a href="notification.html">알림</a></li>
+							<li><a href="setting.html">환경설정</a></li>
+						</ul>
+					</li>
+				</ul> <!-- cd-navigation -->
+			</nav>
+		</div>
+		<script>
+			$('a[href="#privacy"]').click(function(event) {
+				event.preventDefault();
+				$(this).modal({
+					closeExisting: false
+				});
+			});			
+		</script>
+		<a href="#0" class="cd-top js-cd-top">Top</a>
+	</body>
+</html>
+	

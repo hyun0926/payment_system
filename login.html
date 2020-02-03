@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<title>Payment system</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="apple-mobile-web-app-title" content="CMEsoft">
+		<meta name="description" content="Payment system">
+		<meta name="keywords" content="웹에이전시, 비트코인, 가상화폐">
+		<meta property="og:site_name" content="Payment system">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Payment system">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/contents.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/flat/blue.css" media="all" />
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/icheck.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<a href="#0" class="cd-back"><i class="xi-angle-left"></i></a>
+			<a class="cd-logo" href="index.html"><img src="images/global/common/logo.png" alt="CMEsoft"></a>
+			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+		</header>
+	
+<main class="cd-main-content login">
+	<div class="container">
+		<h2><span>CryptoPAY</span>Login</h2>
+		<div class="form-wrap">
+			<span class="login-input input--hoshi">
+				<input class="input__field input__field--hoshi" type="email" id="loginEmail" />
+				<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="loginEmail">
+					<span class="input__label-content input__label-content--hoshi">이메일</span>
+				</label>
+			</span>
+			<span class="login-input input--hoshi">
+				<input class="input__field input__field--hoshi" type="password" id="loginPw" />
+				<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="loginPw">
+					<span class="input__label-content input__label-content--hoshi">비밀번호</span>
+				</label>
+			</span>	
+			<script src="js/classie.js"></script>
+			<script>
+				(function() {
+					// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+					if (!String.prototype.trim) {
+						(function() {
+							// Make sure we trim BOM and NBSP
+							var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+							String.prototype.trim = function() {
+								return this.replace(rtrim, '');
+							};
+						})();
+					}
+					[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+						// in case the input is already filled..
+						if( inputEl.value.trim() !== '' ) {
+							classie.add( inputEl.parentNode, 'input--filled' );
+						}
+						// events:
+						inputEl.addEventListener( 'focus', onInputFocus );
+						inputEl.addEventListener( 'blur', onInputBlur );
+					} );
+					function onInputFocus( ev ) {
+						classie.add( ev.target.parentNode, 'input--filled' );
+					}
+					function onInputBlur( ev ) {
+						if( ev.target.value.trim() === '' ) {
+							classie.remove( ev.target.parentNode, 'input--filled' );
+						}
+					}
+				})();
+			</script>				
+		</div>
+		<div class="check-wrap">
+			<span class="check-input"><input type="checkbox" class="iCheck" id="saveId" /> <label for="saveId">ID 저장</label></span>
+			<span class="check-input"><input type="checkbox" class="iCheck" id="maintain" /> <label for="maintain">로그인 유지</label></span>
+			<a href="#n" class="find-pw">비밀번호찾기</a>
+		</div>
+		<ul class="wayTo-login">
+			<li><a href="#n"><img src="images/global/common/login_email.png" alt="이메일 로그인"><p><strong>이메일</strong>로그인</p></a></li>
+			<li><a href="login_fingerprint.html"><img src="images/global/common/login_fingerprint.png" alt="지문 로그인"><p><strong>지문</strong>로그인</p></a></li>
+			<li><a href="login_pin.html"><img src="images/global/common/login_pin.png" alt="PIN번호 로그인"><p><strong>PIN번호</strong>로그인</p></a></li>
+		</ul>
+	</div>
+</main>
+<a href="sign_up.html" class="btn-fixed slide-hidden"><i class="xi-user-plus-o"></i> 회원가입</a>
+		
+<div id="modal" class="modal alert-blocker">
+	<div class="inner">
+		<div class="moHead">
+			<h3>payment system</h3>
+		</div>
+		<div class="moMid">
+			<p>전자지갑주소등록을 진행하시겠습니까?<br>미등록시, [설정 > 지갑주소등록]에서 설정해주시기<br>바랍니다.</p>
+		</div>
+		<div class="moFoot">
+			<ul class="btnBox btn2">
+				<li><a href="#n" class="btn-n">아니오</a></li>
+				<li><a href="#n" class="btn-c">예</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+		
+		<div id="cd-lateral-nav">
+			<div class="nav-top">
+				<a href="mypage.html"><em class="userName"><strong>홍길동</strong>님</em></a>
+				<span class="alarm">
+					<i class="xi-bell-o"></i>
+					<span class="alarmNum">2</span>
+				</span>
+				<div class="boxing">
+					<select class="lang">
+						<option value="korean">Korean</option>
+						<option value="korean">English</option>
+					</select>
+					<a href="#n" class="btn-logout">로그아웃</a>
+				</div>
+			</div>
+			<nav class="gnb">
+				<ul class="cd-navigation">
+					<li class="item-has-children">
+						<a href="#0">가맹점 소개</a>
+						<ul class="sub-menu">
+							<li><a href="franchise.html">가맹점 소개</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">마이페이지</a>
+						<ul class="sub-menu">
+							<li><a href="#0">코인결제</a></li>
+							<li><a href="payment_details.html">결제내역</a></li>
+							<li><a href="receipt.html">전자영수증</a></li>
+							<li><a href="mypage.html">회원정보</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">고객센터</a>
+						<ul class="sub-menu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="inquiry.html">1:1 문의</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="item-has-children">
+						<a href="#0">설정</a>
+						<ul class="sub-menu">
+							<li><a href="regist_wallet.html">지갑주소등록</a></li>
+							<li><a href="notification.html">알림</a></li>
+							<li><a href="setting.html">환경설정</a></li>
+						</ul>
+					</li>
+				</ul> <!-- cd-navigation -->
+			</nav>
+		</div>
+		<script>
+			$('a[href="#privacy"]').click(function(event) {
+				event.preventDefault();
+				$(this).modal({
+					closeExisting: false
+				});
+			});			
+		</script>
+		<a href="#0" class="cd-top js-cd-top">Top</a>
+	</body>
+</html>
+	
